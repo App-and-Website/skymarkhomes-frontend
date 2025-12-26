@@ -1783,3 +1783,229 @@ font-weight: 500;
   justify-content: left!important;
 }
 }
+
+.ctcontainer{
+    padding: 0!important;
+    background: #fff!important;
+}
+.ctrow{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+.ctrow .contact-box{
+    background: #dfeaf7!important;
+}
+
+
+/* ===== Contact Section Styling ===== */
+.contact-section {
+margin-top: 50px;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+/* ===== Contact Card ===== */
+.contact-card {
+  position: relative;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  transition: all 0.5s ease;
+}
+
+/* Gradient Border Glow */
+.contact-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #d71920, #ff7f50, #111111, #d71920);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0.3;
+  filter: blur(6px);
+  transition: all 0.5s ease;
+}
+
+/* Hover Glow Effect */
+.contact-card:hover::before {
+  opacity: 0.6;
+  filter: blur(12px);
+  transform: scale(1.05);
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+}
+
+/* Icon Styling */
+.contact-card .contact-icon {
+  flex-shrink: 0;
+  font-size: 40px;
+  color: #d71920;
+  margin-right: 25px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.2);
+  color: #ff4c4c;
+}
+
+/* Content Styling */
+.contact-card .contact-content p {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.contact-card .contact-content a {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Address link hover effect */
+.contact-card .contact-content a:hover {
+  color: #d71920;
+}
+
+/* Optional: Add underline animation for address */
+.contact-card .contact-content a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #d71920;
+  transition: width 0.3s ease;
+}
+
+.contact-card .contact-content a:hover::after {
+  width: 100%;
+}
+
+/* Email long word wrap */
+.contact-card .contact-content.email a {
+  word-break: break-all;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+.contact-row {
+  grid-template-columns: 50% 50%;
+}
+}
+@media (max-width: 991px) {
+  .contact-card {
+    padding: 25px 25px;
+  }
+
+  .contact-card .contact-icon {
+    font-size: 36px;
+    margin-right: 20px;
+  }
+
+  .contact-card .contact-content p {
+    font-size: 16px;
+  }
+
+  .contact-card .contact-content a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+.contact-row {
+  grid-template-columns: 100%;
+}
+}
+@media (max-width: 576px) {
+  .contact-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact-card .contact-icon {
+    margin: 0 0 15px 0;
+  }
+}
+
+/* Social links icons */
+.contact-card .contact-content.social a i {
+  margin-right: 8px;
+  color: #d71920;
+  transition: color 0.3s ease;
+}
+
+.contact-card .contact-content.social a:hover i {
+  color: #ff4c4c;
+}
+
+/* Social links spacing */
+.contact-card .contact-content.social a {
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+}
+
+/* Optional underline hover for social links */
+.contact-card .contact-content.social a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: #d71920;
+  transition: width 0.3s ease;
+}
+
+.contact-card .contact-content.social a:hover::after {
+  width: 100%;
+}
+
+/* Make sure social links are responsive like other cards */
+@media (max-width: 576px) {
+  .contact-card .contact-content.social a {
+    justify-content: center;
+  }
+}
+
+.contact-inner-area .contact-inner-boxarea {
+    background: #e0e6ec;
+}
+.ctimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 4px solid #fff;
+}
+.map_row iframe {
+    border: 5px solid #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
