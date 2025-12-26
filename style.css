@@ -1941,13 +1941,12 @@ margin-top: 50px;
 @media (max-width: 576px) {
   .contact-row {
     flex-direction: column;
-    align-items: center;
   }
 
   .contact-card {
     max-width: 100%;
-    text-align: center;
-    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
 
   .contact-card .contact-icon {
