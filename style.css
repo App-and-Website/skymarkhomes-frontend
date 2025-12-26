@@ -1507,3 +1507,279 @@ margin-top: 12px;
     background-position: bottom;
 }
 
+
+/* About page css */
+.page_hero_main .buttons_area {
+  text-align: center;
+  display: flex!important;
+  flex-direction: row;
+  justify-content: center!important;
+}
+.sm-about-intro img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.sm-about-text h2 {
+  margin: 12px 0 20px;
+}
+
+.sm-about-text p {
+  line-height: 1.8;
+}
+
+
+/* About page css */
+/* ===== SkyMark Mission Vision Values ===== */
+.skymark-mvv-section {
+  padding: 60px 0;
+   background: linear-gradient(70deg, #06407e, #8a0f0f);
+}
+
+.skymark-mvv-subtitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c62828;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skymark-mvv-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 10px 0 15px;
+  color: #0b1c2d;
+}
+
+.skymark-mvv-intro {
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.7;
+}
+
+.skymark-mvv-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  height: 100%;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.skymark-mvv-card:hover {
+  transform: translateY(-8px);
+}
+
+.skymark-mvv-highlight {
+  background: linear-gradient(135deg, #c62828, #8e1b1b);
+  color: #ffffff;
+}
+
+.skymark-mvv-highlight h3,
+.skymark-mvv-highlight p {
+  color: #ffffff;
+}
+.skymark-mvv-card p{
+font-weight: 500;
+}
+.skymark-mvv-values {
+    font-weight: 500;
+}
+.skymark-mvv-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(198, 40, 40, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skymark-mvv-highlight .skymark-mvv-icon {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.skymark-mvv-icon i {
+  font-size: 24px;
+  color: #c62828;
+}
+
+.skymark-mvv-highlight .skymark-mvv-icon i {
+  color: #ffffff;
+}
+
+.skymark-mvv-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0b1c2d;
+}
+
+.skymark-mvv-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.skymark-mvv-values {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skymark-mvv-values li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.skymark-mvv-highlight .skymark-mvv-values li {
+  color: #ffffff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .skymark-mvv-title {
+    font-size: 28px;
+  }
+
+  .skymark-mvv-card {
+    padding: 30px 25px;
+  }
+}
+
+
+/*WHy choose Section */
+.skymark-why-section {
+  padding: 60px 0;
+  background: #fff; /* soft background for contrast */
+}
+
+.skymark-why-header {
+  max-width: 860px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.skymark-why-header h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 16px;
+}
+
+.skymark-why-header p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+/* Card */
+.skymark-why-card {
+  position: relative;
+  height: 100%;
+  background: #eff4fa;
+  padding: 45px 35px 40px;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s ease;
+}
+
+/* Gradient Border Glow - Full & Vibrant */
+.skymark-why-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 3px; /* thickness of the border */
+  border-radius: 28px;
+  background: linear-gradient(135deg, #d71920, #06407e, #d71920, #06407e); /* full vibrant gradient */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  opacity: 1; /* make it fully visible */
+  transition: all 0.5s ease;
+}
+
+
+.skymark-why-card:hover::before {
+  background: linear-gradient(135deg, #06407e, #d71920, #06407e, #d71920); /* full vibrant gradient */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Card Content */
+.skymark-why-card h4 {
+  font-size: 23px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.skymark-why-card p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #444;
+  transition: color 0.3s ease;
+}
+
+
+/* Responsive Cards */
+@media (max-width: 991px) {
+  .skymark-why-card {
+    padding: 40px 30px 35px;
+  }
+
+  .skymark-why-card h4 {
+    font-size: 21px;
+  }
+
+  .skymark-why-card p {
+    font-size: 15.5px;
+  }
+}
+
+@media (max-width: 767px) {
+  .skymark-why-section {
+    padding: 80px 0px;
+  }
+
+  .skymark-why-card {
+    padding: 35px 25px 30px;
+  }
+
+  .skymark-why-card h4 {
+    font-size: 20px;
+  }
+
+  .skymark-why-card p {
+    font-size: 15px;
+  }
+}
+
+
+.cta_type_2 .buttons_area {
+  text-align: center;
+  display: flex!important;
+  flex-direction: row;
+  justify-content: center!important;
+}
+.cta_type_2 .cta-content p {
+    max-width: 100%;
+    line-height: 1.5;
+}
+@media (max-width: 991px) {
+    .cta_type_2 .buttons_area {
+  justify-content: left!important;
+}
+}
