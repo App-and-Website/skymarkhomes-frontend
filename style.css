@@ -1091,8 +1091,16 @@ margin-top: 12px;
     font-size: 36px!important;
     line-height: 42px!important;
 }
+.heading5 h1 {
+    font-size: 36px!important;
+    line-height: 42px!important;
+}
 @media (max-width: 576px) {
 .heading5 h2 {
+    font-size: 30px!important;
+    line-height: 36px!important;
+}
+.heading5 h1 {
     font-size: 30px!important;
     line-height: 36px!important;
 }
@@ -1674,7 +1682,7 @@ font-weight: 500;
   font-size: 17px;
   line-height: 1.6;
   color: #555;
-  max-width: 700px;
+  max-width: 780px;
   margin: 0 auto;
   font-weight: 500;
 }
@@ -2253,6 +2261,10 @@ margin-top: 50px;
   color: #fff;
 }
 
+.mt-hero{
+  margin-top: 100px;
+  padding: 80px;
+}
 /* Responsive */
 @media (max-width: 768px) {
   .error-card {
@@ -2270,5 +2282,135 @@ margin-top: 50px;
   .error-text {
     font-size: 15.5px;
   }
+  .mt-hero{
+  margin-top: 100px;
+  padding: 0px;
+}
 }
 
+
+.cta_form_allscreen{
+  background: #fff!important;
+}
+
+.skymark-workflow {
+  padding: 50px 0px;
+  background: #fff;
+}
+
+.skymark-workflow-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skymark-workflow-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.skymark-workflow-subtitle {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #c62828;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.skymark-workflow-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2933;
+  margin-bottom: 10px;
+}
+
+.skymark-workflow-desc {
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.skymark-workflow-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.skymark-workflow-card {
+  background: #eef2f8;
+  padding: 35px 30px;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skymark-workflow-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.skymark-workflow-step {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #c62828, #8e0000);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skymark-workflow-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2933;
+  margin-bottom: 10px;
+}
+
+.skymark-workflow-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .skymark-workflow-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .skymark-workflow {
+    padding: 60px 15px;
+  }
+
+  .skymark-workflow-title {
+    font-size: 28px;
+  }
+
+  .skymark-workflow-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+.why_sec_serv{
+  background: #eef2f8;
+}
+.why_sec_serv .skymark-why-card{
+  background: #fff;
+}
+.serv_img1 img{
+  border: 5px solid #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.content_serv h2, .content_serv p{
+  color: #fff;
+}
